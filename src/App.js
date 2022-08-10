@@ -1,8 +1,12 @@
+import Navbar from "./components/Navbar";
+
+
+
 
 function App() {
   return (
     <div className="App">
-      whassup world?
+      <Navbar />
     </div>
   );
 }
