@@ -1,10 +1,55 @@
+//issues:
+// - can't get bold on hover
+
+:root{
+    --background-color: white;
+    --background-light: white;
+    // --shadow-color: black;
+    --red: #C60C30;
+    // --text-color: #0a0a0a;
+    --text-light: #575757;
+    // --font-size: 16px;
+    --gold: #9E7C0C;
+    --animation-speed: 1;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    // font-weight: bold;
+}
+
+a:hover{
+    color: var(--gold);
+    
+}
+
 .navbar{
     height: 55px;
     background-color: black;
+    box-shadow: 0 3px var(--red);
+    color: #9E7C0C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        font-size: 1.2em;
+        font-weight: bold;
+        color: var(--red);
+        text-decoration: none;
+    }
+}
+
+.container{
+    padding-inline: 15vw;
 }
