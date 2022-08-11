@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className='home'>
       {/* <img className='home-logo' src={''} alt='LoveBug Bakery Logo'  width='378' height='378' /> */}
-	    <h1 className='welcome'>Welcome Lovebugs</h1>
+	    {/* <h1 className='welcome'>Welcome Lovebugs</h1> */}
     </div>
   )
 }

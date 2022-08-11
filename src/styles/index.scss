@@ -17,24 +17,25 @@
 body{
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
-    background-color: var(--purple) ;
+    background-color: #eeeeee;
 
 }
 
 a{
     text-decoration: none;
     color: var(--gold);
+    text-transform: uppercase;
 }
 
 a:hover{
     color: #ffffff;
-    text-decoration: underline;
-    text-transform: lowercase;  
+    text-transform: lowercase; 
+    text-shadow: 2px 2px black; 
 }
 
 .links{
     height: 55px;
-    background-color: black;
+    background-color: var(--purple);
     box-shadow: 0 3px var(--gold);
     color: var(--gold);
     display: flex;
