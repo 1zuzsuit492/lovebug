@@ -2,9 +2,12 @@
 // - can't get bold on hover
 
 :root{
-    --red: #C60C30;
-    --gold: #9E7C0C;
-    --purple: #241773;
+    // --red: #C60C30;
+    // --gold: #9E7C0C;
+    // --pink: #241773;
+    --green: #93EF1B;
+    --orange: rgb(218,146,85);
+    --pink: #E6A8B8;
     --animation-speed: 1;
 }
 
@@ -17,13 +20,12 @@
 body{
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
-    background-color: #eeeeee;
-
+    background-color: var(--green);
 }
 
 a{
     text-decoration: none;
-    color: var(--gold);
+    color: var(--orange);
     text-transform: uppercase;
 }
 
@@ -33,18 +35,38 @@ a:hover{
     text-shadow: 2px 2px black; 
 }
 
+.menu-button{
+    height: 25px;
+    width: 35px;
+    background-color: var(--orange);
+    .bar{
+        height: 8px;
+        width: 100%;
+        background-color: var(--pink);
+        position: absolute;
+        // &:nth-child(2){
+        //     top: 50%;
+        //     transform: translate(-50%);
+        // }
+        // &:nth-child(3){
+        //     top:100%;
+        //     transform: translateY(-100%);
+        // }
+    }
+}
+
 .links{
     height: 55px;
-    background-color: var(--purple);
-    box-shadow: 0 3px var(--gold);
-    color: var(--gold);
+    background-color: var(--pink);
+    box-shadow: 0 3px var(--orange);
+    color: var(--orange);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     .logo{
         font-size: 1.2em;
         font-weight: bold;
-        color: var(--gold);
+        color: var(--orange);
         text-decoration: none;
     }
 }

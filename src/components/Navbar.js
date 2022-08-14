@@ -6,7 +6,7 @@ export default function Navbar() {
             <nav className='Navbar'>
                 <ul>
                     <div className="logo">
-                        <Link to='/'>LoveBug Bakery</Link>
+                        <Link to='/'>LoveBug Bakery Logo</Link>
                     </div>
                 </ul>
                 <div className="links">
@@ -21,6 +21,14 @@ export default function Navbar() {
                     <ul>
                         <Link to="/contact">Contact Us</Link>
                     </ul>
+                </div>
+
+                <div className="menu-button">
+                <div className="bar"></div>
+                <div className="bar"></div>
+                <div className="bar"></div>
+
+                    test
                 </div>
 
             </nav>
