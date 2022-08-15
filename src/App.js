@@ -16,6 +16,7 @@ function App() {
       <Route path="/goodies" element={<Goodies />}/>
       </Routes>
       <Navbar />
+      <div className="gradient"></div>
     </div>
   );
 }
