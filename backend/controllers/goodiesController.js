@@ -1,8 +1,6 @@
 const express = require("express");
 
-const {
-    getAllGoodies, getGoodie, newGoodie, deleteGoodie, updateGoodie
-} = require("../queries/goodies")
+const { getAllGoodies, getGoodie, newGoodie, deleteGoodie, updateGoodie } = require("../queries/goodies")
 
 const goodies = express.Router();
 
