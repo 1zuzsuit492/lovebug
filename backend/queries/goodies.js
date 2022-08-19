@@ -26,7 +26,7 @@ const getGoodie = async (id) => {
 const newGoodie = async (goodie) => {
     try {
       const newGoodies = await db.one(
-        "INSERT INTO goodies (name, description, price, image) VALUES($1, $2, $3, $4) RETURNING *",
+        "INSERT INTO goodies (name, description, price, image, category) VALUES($1, $2, $3, $4 $5) RETURNING *",
         [
           goodie.name,
           goodie.description,
@@ -56,8 +56,8 @@ const deleteGoodie = async (id) => {
 //UPDATE
 const updateGoodie = async (id, goodie) => {
     try {
-    const { name, description, price, image} = goodie
-    const updatedGoodie = await db.one("UPDATE goodies SET name =$1, description=$2, price=$3, image=$4 WHERE id=$5 RETURNING *", [name, description, price, image, id]);
+    const { name, description, price, image, category} = goodie
+    const updatedGoodie = await db.one("UPDATE goodies SET name =$1, description=$2, price=$3, image=$4, category=$5 WHERE id=$6 RETURNING *", [name, description, price, image, category, id]);
     return updatedGoodie;
     } 
     catch (err){
