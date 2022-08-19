@@ -1,3 +1,5 @@
+\c lovebug
+
 INSERT INTO goodies (name, description, price, image, category) VALUES
 ('Vanilla Macaron', 'Made with real vanilla!', '2','https://picsum.photos/200', 'Macarons'),
 ('NY Style Cheesecake Slice', 'Made with love!', '4', 'https://picsum.photos/200', 'Cake'),
