@@ -46,13 +46,22 @@ goodies.delete("/:id", async (request, response) => {
 });
 
 // Update
-goodies.put("/:id", async (req, res) => {
-    const updatedGoodie = await updateGoodie(req.params.id, req.body);
-    console.log("put /id")
-    if (updatedGoodie.id) {
+// goodies.put("/:id", async (req, res) => {
+//     const updatedGoodie = await updateGoodie(req.params.id, req.body);
+//     console.log("put /id")
+//     if (updatedGoodie.id) {
+//       res.status(200).json(updatedGoodie);
+//     } else {
+//       res.status(404).json(updatedGoodie);
+//     }
+//   });
+
+  goodies.put("/:id", async (req, res) => {
+    try {
+      const updatedGoodie = await updateGoodie(req.params.id, req.body);
       res.status(200).json(updatedGoodie);
-    } else {
-      res.status(404).json(updatedGoodie);
+    } catch (error) {
+      res.status(500).json({ error: error });
     }
   });
 
